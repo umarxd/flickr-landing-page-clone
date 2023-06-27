@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  background-image: url("./Dawn_of_Another_Day_Sky_Matthews.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1100px) {
+  .search-input {
+    display: none;
+  }
+  .search-button {
+    display: inline !important;
+  }
+  .footer-bottom-list-half-size {
+    display: flex !important;
+  }
+  .footer-element-duplicate {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .login-link {
+    border: 1px solid white;
+    padding: 6px;
+  }
+  .signup-link {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .bottom-text {
+    display: none;
+  }
+  .main-button {
+    margin-top: 40px;
+  }
+}
+/* End of Media Queries */
+/* Navbar related */
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  margin-left: 50px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+nav .search-input {
+  justify-self: center;
+  width: 66%;
+  opacity: 0.7;
+  padding: 8px 40px;
+  border: 1px solid #555;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.3s;
+}
+nav .search-input:focus {
+  opacity: 1;
+}
+nav .auth-links {
+  margin-inline: 20px;
+  font-size: 0.9rem;
+}
+nav .auth-links .login-link {
+  margin-right: 20px;
+}
+nav .auth-links .signup-link {
+  padding: 8px 20px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+nav .auth-links .signup-link:hover {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+nav .auth-links .search-button {
+  margin-right: 12px;
+  display: none;
+}
+
+.circles {
+  position: absolute;
+  top: 26;
+  left: 20;
+}
+
+.small-circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-inline: 1px;
+}
+
+.small-circle:nth-of-type(1) {
+  background-color: rgb(37, 85, 195);
+}
+
+.small-circle:nth-of-type(2) {
+  background-color: rgb(255, 0, 179);
+}
+
+/* End of Navbar related */
+/* Footer */
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding-block: 20px;
+}
+footer ul a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+footer ul a:hover {
+  color: rgb(255, 255, 255);
+}
+footer .footer-bottom-list-half-size {
+  display: none;
+  justify-content: space-around;
+}
+footer .footer-bottom-list-half-size li {
+  margin-inline: 20px;
+}
+footer .footer-bottom-list-half-size .footer-section {
+  display: flex;
+}
+
+/* End of Footer */
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  max-width: 640px;
+  margin: auto;
+  text-align: center;
+}
+main .top-text {
+  font-size: 2.8rem;
+}
+main .bottom-text {
+  font-size: 1.4rem;
+  margin-block: 40px;
+  line-height: 32px;
+}
+main .main-button {
+  margin-inline: auto;
+  max-width: 200px;
+  padding: 16 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+main .main-button:hover {
+  color: hsla(0, 0%, 0%, 0.5);
+  cursor: pointer;
+}
+
+/* End of Main *//*# sourceMappingURL=styles.css.map */
